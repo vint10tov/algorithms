@@ -21,7 +21,7 @@ int binary_search(const T * arr, int array_size, T search_element) {
     int start = 0;
     int stop = array_size - 1;
     while (start <= stop) {
-        int pointer = (start + stop) / 2;
+        int pointer = start + (stop - start) / 2;
         if (arr[pointer] == search_element)
             return pointer;
         else if (arr[pointer] < search_element)

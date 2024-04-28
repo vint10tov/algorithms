@@ -24,7 +24,7 @@ int main() {
 
 template <typename T>
 void selection_sort(T * arr, int arr_size) {
-    if (arr_size != 0 and arr_size != 1) {
+    if (arr_size > 1) {
         for (size_t i = 0; i < arr_size - 1; ++i) {
             size_t min_index = i;
             for (size_t j = i + 1; j < arr_size; ++j) {
